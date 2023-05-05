@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="{% url 'teacher_view' form.instance.id %}">
+    {% csrf_token %}
+    {{ form }}
+    <td><input type="submit" value="Create" name="create"></td>
+    <td><input type="submit" value="Delete" name="delete"></td>
+</form>
+</body>
+</html>

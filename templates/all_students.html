@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/students/" method="get">
+</form>
+<ul>
+    {% for contractor in student %}
+
+    <p></p>
+    <option value="{{ contractor.first_name }}">{{ contractor.first_name }}</option>
+    <option value="{{ contractor.year }}">{{ contractor.year }}</option>
+    <p></p>
+
+ {% endfor %}
+</ul>
+</body>
+</html>
